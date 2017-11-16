@@ -19,8 +19,6 @@
 #include <utility>
 #include <vector>
 
-
-
 using namespace std;
 
 #ifdef FIL
@@ -49,9 +47,6 @@ int main(int argc, char* argv[])
     long long int* a[n];
     long long int* b[n];
     long long int* c[n];
-
-    pthread_t threads[n];
-
     printf("%lld\n",n);
     for(int i = 0; i < n; i++){
         a[i] = new long long int[n];
@@ -65,8 +60,6 @@ int main(int argc, char* argv[])
             cin >> b[j][i];
         }
     }
-
-    int k=0;
     for(int i = 0; i < n; i++){
         c[i] = new long long int[n];
         for (int j = 0; j < n; j++)
